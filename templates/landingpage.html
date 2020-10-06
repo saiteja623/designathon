@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+    />
+    <script src="https://use.fontawesome.com/0a34a79056.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/validation.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/0a34a79056.js"></script>
+    <title>DESIGN-ATHON</title>
+    <style>
+      body {
+        background-image: url("/static/images/2.png");
+        background-color: rgb(186, 122, 245);
+      }
+
+      #pagefooter {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <a class="navbar-brand" href="#"
+        ><img src="{% static "images/hackmania.png" %}" alt="HYSEA" height="50"
+        width="50" /> HYSEA</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li style="text-align: center" class="nav-item active">
+            <a class="nav-link" href=""
+              ><i class="fas fa-home"></i> HOME
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li style="text-align: center" class="nav-item">
+            <a class="nav-link" href="#"
+              ><svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-file-earmark-person-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755S12 12 8 12s-5 1.755-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"
+                />
+              </svg>
+              ABOUT
+            </a>
+          </li>
+          <li style="text-align: center" class="nav-item">
+            <a class="nav-link" href="contactus"
+              ><i class="fas fa-question-circle"></i> CONTACT US
+            </a>
+          </li>
+          <li style="text-align: center" class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-info"></i> INFO </a>
+          </li>
+
+          <li style="text-align: center" class="nav-item d-lg-none d-xl-none">
+            <a class="btn btn-outline-success my-2 my-sm-0" href="login"
+              ><i class="fas fa-sign-in-alt"></i> LOGIN</a
+            >
+          </li>
+        </ul>
+        <ul class="class" ="navbar-nav mr-auto">
+          <li
+            style="text-align: center; list-style: none"
+            class="nav-item d-none d-lg-block d-xl-block"
+          >
+            <a class="btn btn-outline-success my-2 my-sm-0" href="login"
+              ><i class="fas fa-sign-in-alt"></i> LOGIN</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 text-white">MISSION</h1>
+      <p class="lead text-white">
+        A platform which connects multiple organisational stakeholders to help
+        students find matching jobs for their profile.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4 text-center">
+          <div class="card mb-3 shadow">
+            <div class="card-header bg-primary text-white">
+              <h3 class="my-0 font-weight-normal">For Businesses</h3>
+            </div>
+            <div id="org" class="card-body">
+              <h4 class="card-title pricing-card-title">Organisation</h4>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>
+                  Register as Organisation to post jobs, internships and hire on
+                  the platform
+                </li>
+              </ul>
+              <footer class="footer pt-5">
+                <a
+                  style="text-decoration: none"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                  href="RegistrationOrganization"
+                  >Register Here</a
+                >
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 text-center">
+          <div class="card mb-3 shadow">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0 font-weight-normal">SPOCs & Placement</h4>
+            </div>
+            <div id="spoc" class="card-body">
+              <h3 class="card-title pricing-card-title">Placement Office</h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>
+                  Register as Placement Officers to maintain your college
+                  profile
+                </li>
+              </ul>
+              <br class="d-none d-xl-block" />
+              <footer class="footer pt-5">
+                <a
+                  style="text-decoration: none"
+                  class="btn btn-lg btn-block btn-outline-primary"
+                  href="RegistrationPO"
+                  >Register Here</a
+                >
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 text-center">
+          <div class="card mb-3 shadow">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0 font-weight-normal">Student</h4>
+            </div>
+            <div id="std" class="card-body">
+              <h3 class="card-title pricing-card-title">Student</h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>
+                  Register as student for job search matching your profile
+                </li>
+              </ul>
+              <br />
+              <br />
+              <a
+                style="text-decoration: none"
+                class="btn btn-lg btn-block btn-outline-primary"
+                href="RegistrationStudent"
+                >Register Here</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4 text-center">
+          <div class="card mb-3 shadow">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0 font-weight-normal">Faculty</h4>
+            </div>
+            <div id="fac" class="card-body">
+              <h3 class="card-title pricing-card-title">Faculty</h3>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>
+                  Register as Faculty to provide mentorship to students for
+                  applying to jobs on the platform
+                </li>
+              </ul>
+              <br />
+              <a
+                style="text-decoration: none"
+                class="btn btn-lg btn-block btn-outline-primary"
+                href="RegistrationFaculty"
+                >Register Here</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      style="background-color: lightgrey"
+      id="pagefooter"
+      class="footer p-5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+            <ul class="list-unstyled mb-2" style="list-style: disc">
+              <li class="list-item"><a href="#">About</a></li>
+              <li class="list-item"><a href="contactus">Contact</a></li>
+              <li class="list-item"><a href="#">Terms of  Use</a></li>
+              <li class="list-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#"
+                  ><i class="fa fa-facebook-square fa-2x fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>© Brand 2020. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

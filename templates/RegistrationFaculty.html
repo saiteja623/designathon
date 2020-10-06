@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>RegistrationFaculty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'styles/styles.min.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static "js/validation.js" %}"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+    />
+    <script src="https://use.fontawesome.com/0a34a79056.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/0a34a79056.js"></script>
+    <style>
+      .register-photo {
+        background-image: url("/static/images/2.png");
+        /* background-color: rgb(186, 122, 245); */
+      }
+
+      #pagefooter {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+
+  <body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+      <a class="navbar-brand" href="#"
+        ><img src={% static "images/hackmania.png" %} alt="HYSEA" height="50"
+        width="50"> HYSEA</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li style="text-align: center" class="nav-item active">
+            <a class="nav-link" href="/"
+              ><i class="fas fa-home"></i> HOME
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li style="text-align: center" class="nav-item">
+            <a class="nav-link" href="#"
+              ><svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-file-earmark-person-fill"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755S12 12 8 12s-5 1.755-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"
+                />
+              </svg>
+              ABOUT
+            </a>
+          </li>
+          <li style="text-align: center" class="nav-item">
+            <a class="nav-link" href="contactus"
+              ><i class="fas fa-question-circle"></i> CONTACT US
+            </a>
+          </li>
+          <li style="text-align: center" class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-info"></i> INFO </a>
+          </li>
+
+          <li style="text-align: center" class="nav-item d-lg-none d-xl-none">
+            <a class="btn btn-outline-success my-2 my-sm-0" href="login"
+              ><i class="fas fa-sign-in-alt"></i> LOGIN</a
+            >
+          </li>
+        </ul>
+        <ul class="class" ="navbar-nav mr-auto">
+          <li
+            style="text-align: center; list-style: none"
+            class="nav-item d-none d-lg-block d-xl-block"
+          >
+            <a class="btn btn-outline-success my-2 my-sm-0" href="login"
+              ><i class="fas fa-sign-in-alt"></i> LOGIN</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Start: Registration Form with Photo -->
+    <div class="bg">
+      <div class="register-photo">
+        <!-- Start: Form Container -->
+        <div class="form-container">
+          <!-- Start: Image -->
+          <div class="image-holder2"></div>
+          <!-- End: Image -->
+          <form action="registerFaculty" method="post">
+          {% csrf_token %}
+            <h2 class="text-center">Create a Faculty account.</h2>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="Enter Full Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                name="number"
+                placeholder="Enter Mobile Number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="txtNewPassword"
+                class="form-control"
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="txtConfirmPassword"
+                class="form-control"
+                type="password"
+                name="password-repeat"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="checkbox" onclick="myFunction()" /> Show Password
+            </div>
+            <div class="form-group">
+              <div
+                class="registrationFormAlert"
+                style="color: green"
+                id="CheckPasswordMatch"
+              ></div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <label class="form-check-label"
+                  ><input class="form-check-input" type="checkbox" required />I
+                  agree to the license terms.</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block" type="submit">
+                Sign Up
+              </button>
+            </div>
+            <a class="already" href="login"
+              >You already have an account?
+              <span style="color: blue"> Login here</span>.</a
+            >
+          </form>
+        </div>
+        <!-- End: Form Container -->
+      </div>
+      <!-- End: Registration Form with Photo -->
+    </div>
+    <footer
+      style="background-color: lightgrey"
+      id="pagefooter"
+      class="footer p-5"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+            <ul class="list-unstyled mb-2" style="list-style: disc">
+              <li class="list-item"><a href="#">About</a></li>
+              <li class="list-item"><a href="contactus">Contact</a></li>
+              <li class="list-item"><a href="#">Terms of  Use</a></li>
+              <li class="list-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#"
+                  ><i class="fa fa-facebook-square fa-2x fa-fw"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>© Brand 2020. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

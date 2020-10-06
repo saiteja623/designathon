@@ -1,0 +1,782 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+
+    <title>Hello, world!</title>
+    <style>
+        body {
+            background-image: url("/static/images/2.png");
+            background-color: rgb(186, 122, 245);
+        }
+
+        #pagefooter {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg shadow-sm" id="myNavbar">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <h2><a href="#" class="navbar-brand ">HYSEA</a></h2>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto nav-fill">
+
+                <li class="nav-item px-4">
+                    <a href="/studentdashboard.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-4">
+                    <a href="#" class="nav-link ">JOBS</a>
+                </li>
+                <li class="nav-item px-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INTERNSHIPS</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">What we do</a>
+                        <a class="dropdown-item" href="#">How we fit your needs</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="d-md-flex align-items-start justify-content-start">
+                            <div>
+                                <div class="dropdown-header">PROFILE</div>
+                                <a class="dropdown-item" href="#">Computer Science Internship</a>
+                                <a class="dropdown-item" href="#">Marketing Internship</a>
+                                <a class="dropdown-item" href="#">Finance Internship</a>
+                                <a class="dropdown-item" href="#">Mechanical Internship</a>
+                                <a class="dropdown-item" href="#">HR Internship</a>
+                                <a class="dropdown-item" href="#">Digital Marketing Internship</a>
+                                <a class="dropdown-item" href="#">Electronics Internship</a>
+                                <a class="dropdown-item" href="#">Content Writing Internship</a>
+                                <a class="dropdown-item" href="#">Civil Internship</a>
+                                <a class="dropdown-item" href="#">Campus Ambassador Program</a>
+                            </div>
+                            <div>
+                                <div class="dropdown-header">Category</div>
+                                <a class="dropdown-item" href="#">Engineering Internship</a>
+                                <a class="dropdown-item" href="#">MBA Internship</a>
+                                <a class="dropdown-item" href="#">Part-Time Jobs/Internships</a>
+                                <a class="dropdown-item" href="#">Graphic Design Internship</a>
+                                <a class="dropdown-item" href="#">Humanities Internship</a>
+                                <a class="dropdown-item" href="#">Science Internship</a>
+                                <a class="dropdown-item" href="#">Law Internship</a>
+                                <a class="dropdown-item" href="#">Architecture Internship</a>
+                                <a class="dropdown-item" href="#">Internships with Job Offer</a>
+                                <a class="dropdown-item" href="#">Internships for Women</a>
+
+                            </div>
+                            <div>
+                                <div class="dropdown-header">LOCATIONS</div>
+                                <a class="dropdown-item" href="#">Work from Home</a>
+                                <a class="dropdown-item" href="#">Internship in Bangalore</a>
+                                <a class="dropdown-item" href="#">Internship in Hyderabad</a>
+                                <a class="dropdown-item" href="#">Internship in Delhi</a>
+                                <a class="dropdown-item" href="#">Internship in Mumbai</a>
+                                <a class="dropdown-item" href="#">Internship in Chennai</a>
+                                <a class="dropdown-item" href="#">Internship in Pune</a>
+                                <a class="dropdown-item" href="#">Internship in Kolkata</a>
+                                <a class="dropdown-item" href="#">Internship in Jaipur</a>
+                                <a class="dropdown-item" href="#">International Internship</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item px-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TRAINING</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">What we do</a>
+                        <a class="dropdown-item" href="#">How we fit your needs</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="d-md-flex align-items-start justify-content-start">
+                            <div>
+                                <div class="dropdown-header">Programming</div>
+                                <a class="dropdown-item" href="#">Programming with C and C++</a>
+                                <a class="dropdown-item" href="#">Core Java</a>
+                                <a class="dropdown-item" href="#">Cloud Computing with AWS</a>
+                                <a class="dropdown-item" href="#">Angular</a>
+                                <a class="dropdown-item" href="#">R Programming</a>
+                                <a class="dropdown-item" href="#">Git</a>
+                                <a class="dropdown-item" href="#">JavaScript</a>
+                                <a class="dropdown-item" href="#">Python</a>
+                            </div>
+                            <div>
+                                <div class="dropdown-header">Development</div>
+                                <a class="dropdown-item" href="#">Bespoke software</a>
+                                <a class="dropdown-item" href="#">Mobile apps</a>
+                                <a class="dropdown-item" href="#">Websites</a>
+                            </div>
+                            <div>
+                                <div class="dropdown-header">Professional Services</div>
+                                <a class="dropdown-item" href="#">Project rescue</a>
+                                <a class="dropdown-item" href="#">Source code recovery</a>
+                                <a class="dropdown-item" href="#">Application support &amp; maintenance</a>
+                            </div>
+                            <div>
+                                <div class="dropdown-header">Design</div>
+                                <a class="dropdown-item" href="#">Graphic Design</a>
+                                <a class="dropdown-item" href="#">UI/UX Design</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item px-4">
+                    <a href="/editresume.html" class="nav-link ">Resume</a>
+                </li>
+                <li class="nav-item px-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROFILE</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="#">My Application</a>
+                        <!-- <a class="dropdown-item" href="/editresume.html">Edit Resume</a> -->
+                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container card shadow">
+        <h2 class="card-header text-center text-white p-5" style="background-color:#ffa500 ;">RESUME</h2>
+        <div class="card-body">
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Personal details :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop1">
+                        Personal details
+                    </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Personal Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputName">First Name</label>
+                                            <input type="text" class="form-control" placeholder="First name">
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputName">Last Name</label>
+                                            <input type="text" class="form-control" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputEmail4">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4"
+                                                placeholder="personal email">
+                                        </div>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputMobile4">Mobile</label>
+                                            <input type="number" class="form-control" id="inputMobile4"
+                                                placeholder="personal number" minlength="10" maxlength="10" required>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputtext4">Current City</label>
+                                            <input type="text" class="form-control" id="inputtext4"
+                                                placeholder="Current City">
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Education :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop2">
+                        Education
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Education</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label" for="inlineCheckbox1">Education Status</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Pursuing</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Completed</label>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputtext4">College or School</label>
+                                            <input type="text" class="form-control" id="inputtext4"
+                                                placeholder="College">
+                                        </div>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">Start Year</label>
+                                            <input type="number" class="form-control" placeholder="Start Year"
+                                                minlength="4" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputendyear">End Year</label>
+                                            <input type="number" class="form-control" placeholder="End Year"
+                                                minlength="4" required>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">Education</label>
+                                            <input type="number" class="form-control" placeholder="X,XII,B.tech...,"
+                                                minlength="4" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputendyear">Stream</label>
+                                            <input type="number" class="form-control" placeholder="MPC,ECE..,"
+                                                minlength="4" required>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">CGPA</label>
+                                            <input type="text" class="form-control" placeholder="8.8" minlength="1"
+                                                required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputendyear">Percentage</label>
+                                            <input type="text" class="form-control" placeholder="88" minlength="1"
+                                                required>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Jobs :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop8">
+                        Jobs
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop8" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">JOB Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="input2">Profile</label>
+                                            <input type="text" class="form-control" placeholder="e.g.Operations"
+                                                minlength="4" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="input3">Organization</label>
+                                        <input type="text" class="form-control" placeholder="e.g.Google" minlength="4"
+                                            required>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="input3">Location</label>
+                                        <input type="text" class="form-control" placeholder="e.g.Mumbai" minlength="4"
+                                            required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">Start Date</label>
+                                            <input type="date" class="form-control" placeholder="Start Date"
+                                                minlength="4" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputendyear">End Date</label>
+                                            <input type="date" class="form-control" placeholder="End Date" minlength="4"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Currently Working here
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <textarea class="form-control" name="message"
+                                                placeholder="Short Description about Work done" rows="14"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Internships :</span>
+                    <!-- Button trigger modal -->
+                    <a type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop9">
+                        Internships
+                    </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop9" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Internship Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="input2">Profile</label>
+                                            <input type="text" class="form-control" placeholder="e.g.Operations"
+                                                minlength="4" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="input3">Organization</label>
+                                        <input type="text" class="form-control" placeholder="e.g.Google" minlength="4"
+                                            required>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="input3">Location</label>
+                                        <input type="text" class="form-control" placeholder="e.g.Mumbai" minlength="4"
+                                            required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Is work From Home
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">Start Date</label>
+                                            <input type="date" class="form-control" placeholder="Start Date"
+                                                minlength="4" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputendyear">End Date</label>
+                                            <input type="date" class="form-control" placeholder="End Date" minlength="4"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Currently Working here
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <textarea class="form-control" name="message"
+                                                placeholder="Short Description about Work done" rows="14"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Projects :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop5">
+                        Projects
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop5" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Projects</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputl2">Title</label>
+                                            <input type="text" class="form-control" placeholder="Project Title"
+                                                minlength="4" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">Start Date</label>
+                                            <input type="date" class="form-control" placeholder="Start Date"
+                                                minlength="4" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputendyear">End Date</label>
+                                            <input type="date" class="form-control" placeholder="End Date" minlength="4"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <textarea class="form-control" name="message"
+                                                placeholder="Short Description about project" rows="14"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="inputl4">Project Link</label>
+                                        <input type="text" class="form-control" placeholder="Project link" minlength="4"
+                                            required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Skills :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop3">
+                        Skills
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Skills</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="inputstartyear">Skills</label>
+                                            <input type="text" class="form-control" placeholder="C,C++,JAVA etc..,"
+                                                minlength="1" required>
+                                        </div>
+                                        <!-- <div class="col">
+                                        <label for="inputendyear">Level</label>
+                                <input type="text" class="form-control" placeholder="88" minlength="1" required>
+                            </div> -->
+                                    </div>
+                                    <div class="col">
+
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-check-label" for="inlineCheckbox1">LEVEL :</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Beginer</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Intermediate</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option3">
+                                            <label class="form-check-label" for="inlineRadio2">Professional</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Work Samples :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop4">
+                        Work Samples
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop4" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Work Sample</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="input2">GITHUB</label>
+                                            <input type="text" class="form-control" placeholder="github link"
+                                                minlength="4" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="input3">LinkedIn</label>
+                                        <input type="text" class="form-control" placeholder="LinkedIn link"
+                                            minlength="4" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="input3">Others</label>
+                                        <input type="text" class="form-control" placeholder="Other website link"
+                                            minlength="4" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container m-2">
+                <div class="container row">
+                    <span class="h3 col-sm-6"> Additional Details :</span>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary col-sm-6" data-toggle="modal"
+                        data-target="#staticBackdrop6">
+                        Additional Details
+                    </button>
+                </div>
+                <!-- Button trigger modal -->
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop6" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Additional Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <textarea class="form-control" name="message"
+                                                placeholder="Additional Details you want to add to resume"
+                                                rows="14"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <footer class="footer m-4 container row">
+            <a href="#" class="btn btn-dark btn-lg col-sm-3 m-3">Reset</a>
+            <a href="#" class="btn btn-primary btn-lg col-sm-3 m-3">SAVE</a>
+        </footer>
+    </div>
+
+    </div>
+    <footer style="background-color: lightgrey;" id="pagefooter" class="footer p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <ul class="list-unstyled mb-2" style="list-style:disc;">
+                        <li class="list-item"><a href="#">About</a></li>
+                        <li class="list-item"><a href="/contactus.html">Contact</a></li>
+                        <li class="list-item"><a href="#">Terms of  Use</a></li>
+                        <li class="list-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Brand 2020. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
